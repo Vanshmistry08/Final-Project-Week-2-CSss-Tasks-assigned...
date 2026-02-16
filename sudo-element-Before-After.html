@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudo-Element-Before-After</title>
+</head>
+ <style>
+ ::selection {
+    background-color:00ff11; /* Change to your desired background color */
+ }
+
+  p ::first-line{
+    color:#ff0000;
+  }
+
+
+  p::first-letter{
+    font-size: 44px;
+  }
+
+
+  p::before{
+    content:"welcome";
+  }
+
+
+  p::after{
+    content:"Welcome";
+  }
+
+ </style>
+<body>
+
+
+     <p>
+You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.
+     </p>
+</body>
+</html>

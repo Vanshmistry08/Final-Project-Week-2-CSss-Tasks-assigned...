@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index Practice</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+        .container{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: #f0f0f0;
+            margin: 50px auto;
+            border:  2px solid #333;
+        }
+
+        .box1 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: #ff6347;
+            z-index: 1;
+        }
+
+
+
+
+        .box2 {
+            position: absolute;
+            top: 100px;
+            bottom: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: #4682b4;
+            z-index: 2;
+        }
+
+
+
+        .box3 {
+            position: absolute;
+            bottom: 150px;
+            width: 150px;
+            height: 100px;
+            background-color: #32cd32;
+            z-index: 3;
+        }
+        </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="box1">box1</div>
+                <div class="box2">box2</div>
+                <div class="box3">box3</div>
+            </div>
+        </body>
+
+
+
+    </style>
+</head>
+
+</html>
+
+
+
